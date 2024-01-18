@@ -1,0 +1,77 @@
+/*ABOUT US.HTML*/
+.logoWppAboutUs {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+  
+.navFooterCelularAboutUs {
+    display: none;
+}
+  
+.containerDatosNosotros {
+    width: 100%;
+    padding-top: 100px;
+    background-color: black;
+}
+  
+.datosNosotros {
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 330px 330px;
+    grid-template-areas: "datoUno datoDos datoTres" "datoCuatro datoCinco datoSeis";
+    text-align: center;
+    column-gap: 100px;
+    row-gap: 50px;
+    height: auto;
+}
+  
+.dato {
+    height: 100px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: $color-fuente;
+    background-color: #1F1F1F;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+
+    &:hover {
+        height: 330px;
+        transform: scale(1.1);
+        border: 2px solid whitesmoke;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+      
+        .tituloDato {
+          margin-top: 15px;
+          border-radius: 10px;
+          padding-bottom: 15px;
+          border-bottom: 2px solid whitesmoke;
+          box-shadow: 0px 5px 5px -5px whitesmoke;
+        }
+      
+        .textoDato, .subTituloDato {
+          display: block;
+        }
+    }
+}
+  
+.tituloDato {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+  
+.subTituloDato {
+    text-transform: uppercase;
+    display: none;
+}
+  
+.textoDato {
+    display: none;
+    font-size: 0.8rem;
+}

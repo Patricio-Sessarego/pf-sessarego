@@ -1,0 +1,117 @@
+/*FORMS*/
+.logoWppForm {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+}
+  
+.containerPadre {
+    width: 100%;
+    display: grid;
+    padding-top: 115px;
+    padding-bottom: 50px;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+}
+  
+.container {
+    width: 800px;
+    height: 550px;
+    background-color: #1F1F1F;
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px 50px 5px rgba(255, 255, 255, 0.5);
+}
+  
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.h1Form {
+    font-size: 2rem;
+    margin-top: 100px;
+    color: $color-fuente;
+    text-transform: uppercase;
+}
+  
+.inp {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+
+    &:hover {
+        color: $color-fuente;
+    }
+}
+  
+.input {
+    width: 260px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    margin-top: 40px;
+    color: $color-fuente;
+}
+  
+.submit {
+    border: none;
+    width: 290px;
+    cursor: pointer;
+    color: #1F1F1F;
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 1.25rem;
+    border-radius: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: 5px 5px 5px 1px rgba(255, 255, 255, 0.5), -5px -5px 5px 1px rgba(255, 255, 255, 0.5), 5px -5px 5px 1px rgba(255, 255, 255, 0.5), -5px 5px 5px 1px rgba(255, 255, 255, 0.5);
+
+    &:hover {
+        transform: scale(1.1);
+        border: 2px solid whitesmoke;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 2px 2px 5px 0px whitesmoke, -2px -2px 5px 0px whitesmoke, 2px -2px 5px 0px whitesmoke, -2px 2px 5px 0px whitesmoke;
+    }
+}
+
+.linkSubmit {
+    text-decoration: none;
+    color: #1F1F1F;
+}
+  
+.msjForm {
+    font-size: 1rem;
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+  
+.linkForm {
+    font-size: 1rem;
+    color: $color-fuente;
+    text-decoration: none;
+}
+  
+.msjSoporte {
+    width: 260px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    margin-top: 40px;
+    resize: vertical;
+    min-height: 20px;
+    max-height: 100px;
+    color: $color-fuente;
+}

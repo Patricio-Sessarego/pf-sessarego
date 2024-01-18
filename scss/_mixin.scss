@@ -1,0 +1,10 @@
+@mixin hoverCards {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.5), 3px -3px 15px rgba(255, 255, 255, 0.5), -3px -3px 15px rgba(255, 255, 255, 0.5), -3px 3px 15px rgba(255, 255, 255, 0.5);
+}
+
+@mixin hoverNavBar {
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    transform: scale(1.1);
+}

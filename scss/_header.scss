@@ -1,0 +1,196 @@
+/*HEADER*/
+.logoImg {
+    grid-area: imgLogo;
+}
+  
+.navBarHeader {
+    grid-area: navBarHeader;
+}
+  
+.navBarHeaderCelular {
+    grid-area: navBarHeaderCelular;
+}
+  
+.searchBarContainer {
+    grid-area: searchBar;
+}
+  
+.searchTool {
+    border-radius: 20px;
+}
+  
+.navBarHeaderCelular, .barraNavCelular, .listaHeaderCelular, .navegacionCelular, .itemNavCelular, .primerItemNavCelular {
+    display: none;
+}
+  
+.imgLogo {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: #222222;
+    width: 200px;
+    height: 150px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+  
+.headerContainer {
+    box-shadow: 3px 3px 5px 0px whitesmoke;
+    background-color: #222222;
+    color: $color-fuente;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 75px 75px;
+    grid-template-areas: "imgLogo navBarHeader" "imgLogo searchBar";
+}
+  
+.barraNav {
+    background-color: #222222;
+    justify-content: flex-end;
+    color: $color-fuente;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+  
+.navegacion {
+    background-color: #222222;
+    color: $color-fuente;
+}
+  
+.itemNav {
+    height: 40px;
+    font-size: 1rem;
+    color: $color-fuente;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:visited {
+        color: $color-fuente;
+    }
+  
+    &:focus {
+        transform: scale(1);
+        color: $color-fuente;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        color: #FAEBD7;
+
+        .h1Header {
+            color: #FAEBD7;
+        }
+    }
+}
+
+.h1Header {
+    height: 40px;
+    font-size: 1rem;
+    margin-top: 2px;
+    color: $color-fuente;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+  
+.navegacion {
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:hover {
+        @include hoverNavBar;
+    }
+}
+  
+.listaHeader {
+    &:first-child {
+      border-left: 1px solid whitesmoke;
+    }
+  
+    &:last-child {
+      border-right: 1px solid whitesmoke;
+    }
+}
+  
+.barraNavCelular {
+    background-color: #222222;
+    justify-content: flex-end;
+    color: $color-fuente;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+  
+.listaHeaderCelular {
+    justify-content: flex-end;
+}
+  
+.navegacionCelular {
+    color: $color-fuente;
+    background-color: #222222;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:hover {
+        @include hoverNavBar;
+    }
+}
+  
+.itemNavCelular {
+    font-size: 1rem;
+    color: $color-fuente;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:visited {
+        color: $color-fuente;
+    }
+  
+    &:focus {
+        transform: scale(1);
+        color: $color-fuente;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        color: #FAEBD7;
+    }
+}
+  
+.listaHeaderCelular {
+    &:first-child {
+      border-left: 1px solid whitesmoke;
+    }
+  
+    &:last-child {
+      border-right: 1px solid whitesmoke;
+    }
+}
+  
+.searchBarContainer {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.searchBar {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    width: 395px;
+
+    &:hover {
+        box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5), 3px -3px 10px rgba(255, 255, 255, 0.5), -3px -3px 10px rgba(255, 255, 255, 0.5), -3px 3px 10px rgba(255, 255, 255, 0.5);
+    }
+}
+  
+.btnSearchBar {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 0;
+
+    &:hover {
+        color: black;
+    }
+}

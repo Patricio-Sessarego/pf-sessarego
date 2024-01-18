@@ -1,0 +1,121 @@
+/*INDEX.HTML*/
+main {
+    background-color: black;
+}
+
+/*CARROUSEL*/
+
+.carousel {
+    width: 100%;
+}
+
+.imgCarrousel {
+    width: 100%;
+    height: 400px;
+}
+
+/*PRODUCTOS | CARDS*/
+.productoUno {
+    grid-area: productoUno;
+}
+  
+.productoDos {
+    grid-area: productoDos;
+}
+  
+.productoTres {
+    grid-area: productoTres;
+}
+  
+.productoCuatro {
+    grid-area: productoCuatro;
+}
+  
+.productoCinco {
+    grid-area: productoCinco;
+}
+  
+.productoSeis {
+    grid-area: productoSeis;
+}
+  
+.productos {
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 480px 480px;
+    grid-template-areas: "productoUno productoDos productoTres" "productoCuatro productoCinco productoSeis";
+    column-gap: 100px;
+    row-gap: 75px;
+    text-align: center;
+}
+  
+.producto {
+    border: 3px solid #333;
+    background-color: #222222;
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-shadow: $shadow-cards;
+
+    &:hover {
+        @include hoverCards;
+    }
+}
+  
+.productoDos img:nth-child(1) {
+    margin-top: 50px;
+    margin-bottom: 77px;
+}
+  
+.productoCuatro img:nth-child(1) {
+    margin-top: 70px;
+    margin-bottom: 74px;
+}
+  
+.productoSeis img:nth-child(1) {
+    height: 324px;
+}
+  
+.fotoProducto {
+    object-fit: contain;
+    width: 100%;
+}
+  
+.nombreProducto {
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    text-transform: uppercase;
+    color: $color-fuente;
+    font-size: 1.5rem;
+    margin: 5px;
+
+    &:hover {
+        color: #FAEBD7;
+    }
+}
+  
+.precioProducto {
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    color: $color-fuente;
+    font-size: 1.25rem;
+    margin: 5px;
+
+    &:hover {
+        color: #FAEBD7;
+    }
+}
+  
+.btnComprar {
+    background-color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: $color-fuente;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+
+    &:hover {
+        box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5), 3px -3px 10px rgba(255, 255, 255, 0.5), -3px -3px 10px rgba(255, 255, 255, 0.5), -3px 3px 10px rgba(255, 255, 255, 0.5);
+    }
+}

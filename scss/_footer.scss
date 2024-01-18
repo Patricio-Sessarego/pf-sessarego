@@ -1,0 +1,103 @@
+/*FOOTER*/
+footer {
+    background-color: black;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+  
+.listaFooter, .listaFooterCelular {
+    padding: 0;
+}
+  
+.divListaFooter {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+  
+.linkFooter {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    background-color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: $color-fuente;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.10rem;
+
+    &:hover {
+        @include hoverNavBar;
+        color: #FAEBD7;
+    }
+}
+  
+.divListaFooter {
+    &:first-child {
+      border-left: 1px solid whitesmoke;
+    }
+  
+    &:last-child {
+      border-right: 1px solid whitesmoke;
+    }
+}
+  
+.logoWpp {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+  
+.navFooterCelular {
+    display: none;
+}
+  
+.divListaFooterCelular {
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+  
+.linkFooterCelular {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-right: 1px solid whitesmoke;
+    border-left: 1px solid whitesmoke;
+    background-color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: $color-fuente;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.10rem;
+
+    &:hover {
+        @include hoverNavBar;
+        color: #FAEBD7;
+    }
+}
+  
+.divListaFooterCelular {
+    &:first-child {
+      border-left: 1px solid whitesmoke;
+    }
+  
+    &:last-child {
+      border-right: 1px solid whitesmoke;
+    }
+}
+  
+.logoWppCelular {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+} 
